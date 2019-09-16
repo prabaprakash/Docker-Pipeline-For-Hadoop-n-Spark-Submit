@@ -10,3 +10,7 @@ nmtui
 nano /etc/ssh/sshd_config
 set GSSAPIAuthentication no
 UseDNS no
+
+4. Docker Centos
+
+https://docs.docker.com/install/linux/docker-ce/centos/
