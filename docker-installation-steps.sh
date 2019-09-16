@@ -12,5 +12,8 @@ set GSSAPIAuthentication no
 UseDNS no
 
 4. Docker Centos
-
 https://docs.docker.com/install/linux/docker-ce/centos/
+
+5. Docker ce
+
+sudo yum install docker-ce docker-ce-cli containerd.io
