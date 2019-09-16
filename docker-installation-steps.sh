@@ -1,5 +1,7 @@
 1. CentOS Minimal
-
+CentOS-7-x86_64-Minimal-1810.iso
+[root@localhost ~]# rpm -q centos-release
+centos-release-7-6.1810.2.el7.centos.x86_64
 2. newtork
 nmcli
 nmtui
