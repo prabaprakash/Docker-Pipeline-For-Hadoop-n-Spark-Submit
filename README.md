@@ -5,6 +5,6 @@
 
 
 ### Go CD Pipeline
-docker run -d -p 8153:8153 -p 8154:8154 gocd/gocd-server:v19.8.0
+docker run -d -p 8153:8153 -p 8154:8154 --name=gocd-server gocd/gocd-server:v19.8.0
 
-docker run --privileged -d -e GO_SERVER_URL=https://$(docker inspect --format='{{(index (index .NetworkSettings.IPAddress))}}' angry_feynman):8154/go gocd/gocd-agent-docker-dind:v19.8.0
+docker run --privileged -d -e GO_SERVER_URL=https://$(docker inspect --format='{{(index (index .NetworkSettings.IPAddress))}}' gocd-server):8154/go gocd/gocd-agent-docker-dind:v19.8.0
