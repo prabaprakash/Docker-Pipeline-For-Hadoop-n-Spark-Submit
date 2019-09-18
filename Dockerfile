@@ -1,4 +1,4 @@
-FROM docker pull prabakaran/sparksubmitwithmavenandlibraries
+FROM prabakaran/sparksubmitwithmavenandlibraries
 COPY / /spark-job
 WORKDIR /spark-job
 RUN apt update && apt install -y maven
